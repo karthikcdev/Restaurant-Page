@@ -1,0 +1,174 @@
+.intro{
+    margin-top: 10px;
+    height: 600px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(206, 16, 16), rgb(255, 255, 255));
+    border-style: none;
+    border-radius: 20px;
+    position: relative;
+}
+.headphone{
+    width: 600px;
+    position: absolute;
+    top: 30px;
+    left: 800px;
+    z-index: 100;
+    transition: 1s;
+    border-radius: 300px;
+}
+.headphone:hover{
+    transform-origin: center;
+    transform: scale(1.2, 1.2);
+}
+.beatssolo{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    font-family: arial,play;
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+    filter: drop-shadow(0 0 2px black);
+}
+.wireless{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 180px;
+    left: 50px;
+    font-family: arial,play;
+    color: black;
+    font-size: 60px;
+    font-weight: bold;
+    filter: drop-shadow(0 0 2px black);
+}
+.hptitle{
+    position: absolute;
+    top: 220px;
+    left: 50px;
+    font-size: 160px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: arial,play;
+    font-weight: bold;
+    filter: drop-shadow(0 0 5px white);
+}
+.shop{
+    position: absolute;
+    top: 370px;
+    left: 50px;
+    background-color: rgb(254, 49, 49);
+    color: white;
+    font-family: arial,play;
+    border-style: none;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px rgb(254, 49, 49));
+    transition: 1s;
+}
+.shop:hover{
+    filter: drop-shadow(0 0 10px rgb(254, 49, 49));
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 450px;
+    margin-bottom: 50px;
+}
+.smartwatch-img{
+    position: absolute;
+    top: 90px;
+    left: 20%;
+    width: 400px;
+    z-index: 100;
+    transition: 1s;
+}
+.smartwatch-img:hover{
+    transform-origin: center;
+    transform: scale(1.3, 1.3);
+}
+.smartwatch{
+    margin-top: 10px;
+    height: 450px;
+    width: 49%;
+    background-color:  rgb(255, 231, 97);
+    border-style: none;
+    border-radius: 20px;
+    position: relative;
+}
+.new{
+    position: absolute;
+    top: 130px;
+    left: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(220, 34, 34);
+    filter: drop-shadow(0 0 1px red);
+}
+.walkfit{
+    position: absolute;
+    top: 170px;
+    left: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(220, 34, 34);
+    filter: drop-shadow(0 0 1px red);
+}
+.vision3{
+    position: absolute;
+    top: 110px;
+    right: 20px;
+    font-size: 80px;
+    font-weight: bold;
+    color: rgb(220, 34, 34);
+    filter: drop-shadow(0 0 1px red);
+    z-index: 120;
+}
+.laptop{
+    margin-top: 10px;
+    height: 450px;
+    width: 49%;
+    background-color:  rgb(254, 49, 49);
+    border-style: none;
+    border-radius: 20px;
+    position: relative;
+}
+.laptop-img{
+    position: absolute;
+    top: 35px;
+    left: 25%;
+    width: 400px;
+    z-index: 100;
+    transition: 1s;
+}
+.laptop-img:hover{
+    transform-origin: center;
+    transform: scale(1.2, 1.2);
+}
+.walklap{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 231, 97);
+    filter: drop-shadow(0 0 1px rgb(255, 231, 97));
+}
+.fusion{
+    position: absolute;
+    top: 180px;
+    right: 30px;
+    font-size: 80px;
+    font-weight: bold;
+    color: rgb(255, 231, 97);
+    filter: drop-shadow(0 0 1px rgb(255, 231, 97));
+    z-index: 120;
+}

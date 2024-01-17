@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign-Up</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Play&display=swap" rel="stylesheet">
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            label{
+                font-family: Comfortaa;
+                font-weight: bold;
+                color: white;
+                margin-top: 5px;
+            }
+            .background-img{
+                width: 100%;
+                height: 200vh;
+                margin: 0;
+                padding: 0;
+                position: fixed;
+            }
+            .card{
+                position: absolute;
+                align-items: center;
+                top: 10%;
+                left: 29%;
+                width: 600px;
+                transform-style: preserve-3d;
+                transition: all 0.5s ease;
+            }
+            .card.flip {
+                transform: rotateY(180deg);
+            }     
+            .login-side{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                position: absolute;
+                min-width: 300px;
+                text-wrap: wrap;
+                width: 600px;
+                z-index: 200;
+                padding: 20px;
+                border-radius: 10px;
+                border: 1px solid white;
+                background: transparent;
+                backdrop-filter: blur(8px);
+                margin: 0;
+                backface-visibility: hidden;
+                transform: rotateY(0deg);
+            }
+            .signup-side{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                position: absolute; 
+                top: 10%;
+                left: 1px;
+                min-width: 300px;
+                width: 600px;
+                z-index: 200;
+                padding: 20px;
+                border-radius: 10px;
+                border: 1px solid white;
+                background: transparent;
+                backdrop-filter: blur(8px);
+                margin: 0;
+                backface-visibility: hidden;
+                transform: rotateY(180deg);
+
+
+            }
+            .welcome{
+                margin: 0;
+                width: 100%;
+                font-family: Comfortaa;
+                font-weight: bold;
+                font-size: 40px;
+                margin: 20px;
+                color: white;
+            }
+            .login{
+                font-family: comfortaa;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            form > div {
+                margin-top: 18px;
+                position: relative;
+            }
+
+            form > div > input {
+                width: 85%;
+                border: none;
+                background: transparent;
+                border-bottom: 2px solid white;
+                padding: 10px;
+                display: flex;
+                flex: 1;
+            }
+            form > div > input:active{
+                border: none;
+                border-bottom: 2px solid white;
+            }
+
+
+            form > div > span.error {
+                display: none;
+                font-size: 0.8em;
+                position: absolute;
+            }
+            form > div >input:invalid:not(:focus):not(:placeholder-shown) ~ .error {
+                display: block;
+                font-family: Comfortaa;
+                color: black;
+                margin-left: 20px;
+                padding-top: 5px;
+            }
+            .buttons{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .button{
+                width: 40%;
+                border-style: none;
+                border-radius: 5px;
+                margin: 20px;
+                font-family: Comfortaa;
+                background-color: white;
+                color: black;
+                border-radius: 30PX;
+                font-weight: bold;
+                padding:13px;
+                cursor: pointer;
+            }
+            .button2{
+                width: 40%;
+                border-style: none;
+                border-radius: 5px;
+                margin: 20px;
+                font-family: Comfortaa;
+                background-color: white;
+                color: black;
+                border-radius: 30PX;
+                font-weight: bold;
+                padding:13px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <img class="background-img" src="background.jpg" alt="">
+        <div class="card-container">
+            <div class="card" id="card">
+                <section class="login-side">
+                    <p class="welcome">WELCOME BACK !</p>
+                    <form>
+                        <div>
+                            <label for="name">Name :</label>
+                            <br />
+                            <input type="text" id="name" placeholder=" " required>
+                            <span class="error">Please enter your name</span>
+                        </div>
+                        <div>
+                            <label for="password">Password :</label>
+                            <br />
+                            <input type="password" id="password" placeholder=" " pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" required>
+                            <span class="error">Please enter a valid password</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="button">LOGIN</button>
+                            <button class="button2" onclick="flipCard()">Create an account</button>
+                        </div>
+                    </form>
+                </section>
+                    <section class="signup-side">
+                        <p class="welcome">CREATE AN ACCOUNT</p>
+                        <form>
+                            <div>
+                                <label for="name">Username :</label>
+                                <br />
+                                <input type="text" id="name" placeholder=" " required>
+                                <span class="error">Please enter your username</span>
+                            </div>
+                            <div>
+                                <label for="email">Email :</label>
+                                <br />
+                                <input type="email" id="email" placeholder=" " required>
+                                <span class="error">Please enter a valid email address</span>
+                            </div>
+                            <div>
+                                <label for="password">Password :</label>
+                                <br />
+                                <input type="password" id="password" placeholder=" " pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" required>
+                                <span class="error">Please enter a valid password</span>
+                            </div>
+                            <div class="buttons">
+                                <button class="button">SIGN-UP</button>
+                                <button class="button2" onclick="flipCard()">Already have an account</button>
+                            </div>
+                        </form>
+                    </section>
+            </div>
+        </div>
+        <script>
+            function flipCard() {
+                const card = document.getElementById('card');
+                card.classList.toggle('flip');
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+.footer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.div3{
+    width: 150px;
+}
+.footer-logo{
+    width: 150px;
+    cursor: pointer;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 150px;
+    cursor: pointer;
+}
+.div4{
+    margin: 0;
+}
+.our-products{
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+.products{
+    line-height: 25px;
+}
+.div5{
+    margin: 0;
+}
+.contact{
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+.address{
+    width: 300px;
+    font-size: 14px;
+    line-height: 25px;
+}
+.div6{
+    margin: 0;
+}
+.legal{
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+.tandc{
+    line-height: 25px;
+}

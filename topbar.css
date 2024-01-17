@@ -1,0 +1,48 @@
+.topbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.div1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    padding-top: 5px;
+    height: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.option{
+    color: darkgray;
+    font-weight: 500;
+    margin-right: 18px;
+    margin-left: 18px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+.option:hover{
+    color: black;
+    font-weight: bold;
+}
+.div2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.search{
+    width: 24px;
+    height: 24px;
+    margin-left: 18px;
+    margin-right: 36px;
+    cursor: pointer;
+}
+.cart{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
